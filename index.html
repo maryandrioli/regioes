@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regiões</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 150px; /* Ajuste a altura conforme necessário */
+        }
+        .circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            font-size: 12px;
+            font-family: Arial, sans-serif;
+        }
+        #green { background-color: green; left: 20px; top: 50px; }
+        #red { background-color: red; left: 120px; top: 50px; }
+        #yellow { background-color: yellow; left: 220px; top: 50px; color: black; }
+        #blue { background-color: blue; left: 320px; top: 50px; }
+        #orange { background-color: orange; left: 420px; top: 50px; }
+    </style>
+</head>
+<body>
+    <h1>Regiões </h1>
+    <div class="container">
+        <div id="green" class="circle"> <a href= "norte/index.html"> NORTE </a> </div>
+        <div id="red" class="circle"> <a href= "nordeste/index.html"> NORDESTE <a/></div>
+        <div id="yellow" class="circle"> <a href= "sudeste/index.html"> SUDESTE </a> </div>
+        <div id="blue" class="circle"> <a href= "centro-oeste/index.html">CENTRO-OESTE </a> </div>
+        <div id="orange" class="circle">  <a href= "sul/index.html"> SUL </a> </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

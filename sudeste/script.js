@@ -36,6 +36,10 @@ function handleKeyPress(event) {
             return; // No need to play sound or change size
     }
 
+    playSoundAndAnimate(circle, sound);
+}
+
+function playSoundAndAnimate(circle, sound) {
     if (!concurrentPlay) {
         stopAllSounds();
     }
@@ -73,5 +77,13 @@ document.addEventListener('keyup', () => {
     document.querySelectorAll('.circle').forEach(circle => {
         circle.style.width = '';
         circle.style.height = '';
+    });
+});
+
+// Add click event listeners to circles
+document.querySelectorAll('.circle').forEach(circle => {
+    circle.addEventListener('click', () => {
+        let sound = sounds[circle.id];
+        playSoundAndAnimate(circle, sound);
     });
 });

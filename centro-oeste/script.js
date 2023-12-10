@@ -35,7 +35,6 @@ function handleKeyPress(event) {
             toggleConcurrentPlay();
             return; // No need to play sound or change size
     }
-
     playSoundAndAnimate(circle, sound);
 }
 

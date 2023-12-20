@@ -33,7 +33,7 @@ h1 {
 #green { background-color: green; }
 #red { background-color: red; }
 #yellow { background-color: yellow; color: black; }
-#blue { background-color: blue; }
+#blue { background-color: rgba(0, 132, 255, 0.671); }
 #orange { background-color: orange; }
 
 /* CSS responsivo para telas menores */
